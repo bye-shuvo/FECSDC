@@ -38,13 +38,13 @@ const committeePreview = () => {
   ];
 
   return (
-    <section className="py-20 text-white px-[10%]">
+    <section className="pb-20 text-white px-[10%]">
       <div className="mx-auto px-4">
         <div className="mb-12">
           <h2 className="text-3xl md:text-[3rem] font-bold text-foreground mb-4">
             Our Community
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-paragraph-text-dark/70 text-lg">
             Meet talented developers and designers shaping the future
           </p>
         </div>
@@ -55,7 +55,7 @@ const committeePreview = () => {
               key={member.id}
               className="h-85 outline-5 outline-secondary-header rounded-lg text-center hover:shadow-lg transition-shadow bg-[url(/src/assets/executive-members/org_sec.jpeg)] bg-no-repeat bg-center bg-cover bg-clip-content hover:scale-[105%] hover:shadow-secondary-header/30 shadow-lg"
             >
-              <div className="flex flex-col h-full justify-end items-center bg-linear-to-b from-0% from-transparent via-55% via-secondary-header/40 to-95% to-secondary-header/90 overflow-hidden">
+              <div className="flex flex-col h-full justify-end items-center overflow-hidden bg-linear-to-b from-0% from-transparent via-55% via-secondary-header/40 to-95% to-secondary-header/90">
                 <h3 className="z-10 font-bold text-[1.5rem]">{member.name}</h3>
                 <p className="z-10 font-semibold text-sm mb-1">{member.role}</p>
                 <p className="z-10 text-xs">{member.specialty}</p>

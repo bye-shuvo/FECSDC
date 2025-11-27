@@ -76,9 +76,8 @@ const FeaturedEvents = () => {
   ]);
 
   return (
-    <section className="flex flex-col items-center gap-4 px-[10%]">
-      <div className="z-0 absolute left-0 bg-linear-to-b from-0% from-cta-btn/65 to-90% to-body/50 h-25 w-full"></div>
-      <header className="w-full mt-25 mb-5">
+    <section className="flex flex-col items-center gap-4 px-[10%] py-20">
+      <header className="w-full mb-5">
         <h2 className="text-[3rem] font-semibold text-white">
           Upcoming Events
         </h2>
@@ -98,10 +97,10 @@ const FeaturedEvents = () => {
                   index % 2 === 0 ? "order-1" : "order-3"
                 }`}
               >
-                <p className="text-sm w-fit rounded-full py-1 px-2 bg-cta-btn/30">
+                <span className="text-xs w-fit rounded-full py-1 px-2 bg-cta-btn/30">
                   {event.category}
-                </p>
-                <p className="text-2xl font-bold">{event.title}</p>
+                </span>
+                <p className="text-2xl font-bold mb-3">{event.title}</p>
                 <p className="text-md text-paragraph-text-dark">
                   {event.description}
                 </p>
