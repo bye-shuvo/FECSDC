@@ -112,7 +112,7 @@ const Events = () => {
         ))}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 gap-x-25">
+      <div className="grid md:grid-cols-2 gap-8">
         {filteredEvents.map((event) => (
           <div
             key={event.id}

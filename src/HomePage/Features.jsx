@@ -38,13 +38,13 @@ const Features = () => {
         <h2 className="text-[3rem] font-semibold text-white mb-5">
           What We Offer
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
               className="border-2 border-secondary-header hover:border-cta-btn hover:scale-105 transition-all rounded-2xl p-5"
             >
-              <span className="flex h-20 first:in-first:fill-cta-btn mb-2">
+              <span className="flex h-15 first:in-first:fill-cta-btn mb-2">
                 {feature.icon}
               </span>
               <header className="flex flex-col gap-3">
