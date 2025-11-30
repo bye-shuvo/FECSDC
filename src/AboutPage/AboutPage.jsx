@@ -174,7 +174,7 @@ const AboutPage = () => {
             </p>
             <ul className="space-y-3 mt-5">
               {rules.map((rule, index) => (
-                <li className="flex gap-4 items-center">
+                <li key={index} className="flex gap-4 items-center">
                   <p className="h-7 w-7 bg-cta-btn/50 rounded-full text-xl flex justify-center items-center">
                     {index + 1}
                   </p>

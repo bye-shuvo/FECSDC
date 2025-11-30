@@ -83,10 +83,7 @@ const Leaderboard = () => {
       avatar: "",
     },
   ];
-
   const top3members = topMembers.filter((member) => member.rank <= 3);
-
-  console.log(topMembers.filter((member) => member.rank <= 3));
 
   const getRankIcon = (rank) => {
     switch (rank) {
@@ -267,7 +264,7 @@ const Leaderboard = () => {
                       <h2 className="text-lg font-semibold">{member.name}</h2>
                       <p>{member.department}</p>
                       {member.badges.map((badge, index) => (
-                        <span className="px-2 py-1.5 bg-amber-500/40 mx-1 rounded-full text-sm">
+                        <span key={index} className="px-2 py-1.5 bg-amber-500/40 mx-1 rounded-full text-sm">
                           {badge}
                         </span>
                       ))}
