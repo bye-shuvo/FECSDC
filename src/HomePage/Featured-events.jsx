@@ -93,7 +93,7 @@ const FeaturedEvents = () => {
               className="grid grid-cols-3 items-center justify-center min-h-56"
             >
               <div
-                className={`bg-sidebar/30 relative text-white outline-1 outline-secondary-header rounded-lg min-h-full flex flex-col gap-2 p-5 pb-12 ${
+                className={`z-10 bg-sidebar/50 relative text-white outline-1 outline-secondary-header rounded-lg min-h-full flex flex-col gap-2 p-5 pb-12 ${
                   index % 2 === 0 ? "order-1" : "order-3"
                 }`}
               >
@@ -111,9 +111,9 @@ const FeaturedEvents = () => {
                   {event.attendees}
                 </p>
               </div>
-              <div className="text-white flex flex-col items-center relative order-2">
-                <div className="absolute top-1/2 h-1 w-full bg-amber-400"></div>
-                <div className="flex flex-col items-center px-5 bg-cta-btn rounded-full">
+              <div className="text-white flex flex-col items-center justify-center relative order-2">
+                <div className="absolute bg-sidebar h-30 w-118 [mask:radial-gradient(#0000_71%,#000_72%)_10000%_10000%/99.5%_99.5%]"></div>
+                <div className="relative flex flex-col items-center justify-center px-5 rounded-full">
                   <p>{event.date}</p>
                   <p>{event.time}</p>
                 </div>
@@ -123,7 +123,7 @@ const FeaturedEvents = () => {
                   index % 2 === 0 ? "order-3" : "order-1"
                 }`}
               >
-                <img className="w-full" src="/src/assets/event.png" alt="event-photo" />
+                <img className="w-full z-10" src="/src/assets/event.png" alt="event-photo" />
               </div>
             </div>
           );

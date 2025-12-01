@@ -32,3 +32,15 @@
     transition-timing-function: ease-in-out;
     font-family: "figtree" , sans-serif;
 }
+
+.sparkle {
+  height: 300px;
+  width: 250px;
+  background: #EDC951;
+  mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+
+  /* if you will use a different unit than px consider round()
+   height: round(__,1px);
+   width: round(__,1px);
+  */
+}

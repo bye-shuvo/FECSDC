@@ -118,7 +118,7 @@ const AboutPage = () => {
             {values.map((feature, index) => (
               <div
                 key={index}
-                className="border-2 border-secondary-header hover:border-cta-btn hover:scale-105 transition-all rounded-2xl p-5"
+                className="border-2 border-secondary-header hover:border-cta-btn hover:scale-105 transition-all rounded-2xl p-5 bg-sidebar/50"
               >
                 <span className="flex h-15 first:in-first:fill-cta-btn mb-2">
                   {feature.icon}
@@ -164,7 +164,7 @@ const AboutPage = () => {
           <h2 className="text-3xl md:text-[3rem] font-bold text-foreground mb-5">
             Membership Guidelines
           </h2>
-          <div className="p-8 bg-sidebar/30 border-2 border-sidebar rounded-2xl">
+          <div className="p-8 bg-sidebar/50 border-2 border-sidebar rounded-2xl">
             <h3 className="text-lg md:text-[2rem] font-bold text-foregrounds">
               Code Of Conduct
             </h3>

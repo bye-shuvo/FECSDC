@@ -165,9 +165,9 @@ const RoadmapPath = ({ selectedCategories }) => {
   console.log(selectedStages);
   return (
     <section className="w-full z-10">
-      {selectedStages.map((stage) => {
+      {selectedStages.map((stage , index) => {
         return (
-          <div className="bg-sidebar h-fit w-full rounded-2xl text-paragraph-text-dark mb-10 overflow-hidden">
+          <div key={index} className="bg-sidebar/50 h-fit w-full rounded-2xl text-paragraph-text-dark mb-10 overflow-hidden">
             <div className={`flex items-center gap-5 bg-linear-to-r ${stage.color === "web" ? "from-blue-400" : stage.color === "mobile" ? "from-cta-btn" : stage.color === "desktop" ? "from-gray-400" : ""} p-5`}>
               <span className="flex h-15 first:in-first:fill-white bg-gray-500/50 p-2 rounded-2xl">
                 {stage.icon}
@@ -182,7 +182,7 @@ const RoadmapPath = ({ selectedCategories }) => {
             <div className="flex flex-col justify-center p-6 gap-5">
               {stage.roadmap.map((sector , index) => {
                 return (
-                  <div className="flex gap-3">
+                  <div key={index} className="flex gap-3">
                     <span className="flex flex-col items-center gap-2">
                       <span className={`flex shrink-0 justify-center items-center h-10 w-10 rounded-full ${stage.color === "web" ? "bg-blue-400" : stage.color === "mobile" ? "bg-cta-btn" : stage.color === "desktop" ? "bg-gray-400" : ""}`}>{index+1}</span>
                       {
@@ -193,8 +193,8 @@ const RoadmapPath = ({ selectedCategories }) => {
                       <p className="text-lg font-semibold mb-2">{sector.title}</p>
                       <p className="text-md font-normal">{sector.description}</p>
                       <div className="flex gap-3">
-                        {sector.technologies.map((technology) => {
-                          return <span className={`px-2.5 py-0.5 rounded-full text-center text-xs border ${technology.level === "beginner" ? "bg-green-400/50 border-green-400" : technology.level === "intermediate" ? "bg-cta-btn/50 border-cta-btn" : technology.level === "advanced" ? "bg-red-500/50 border-red-500" : ""}`}>{technology.name}</span>;
+                        {sector.technologies.map((technology ,index) => {
+                          return <span key={index} className={`px-2.5 py-0.5 rounded-full text-center text-xs border ${technology.level === "beginner" ? "bg-green-400/50 border-green-400" : technology.level === "intermediate" ? "bg-cta-btn/50 border-cta-btn" : technology.level === "advanced" ? "bg-red-500/50 border-red-500" : ""}`}>{technology.name}</span>;
                         })}
                       </div>
                     </div>

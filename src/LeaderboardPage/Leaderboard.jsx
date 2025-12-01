@@ -126,7 +126,7 @@ const Leaderboard = () => {
   return (
     <section className="flex flex-col gap-10">
       {/* point suggession section */}
-      <div className="flex flex-col gap-4 border border-secondary-header p-8 rounded-2xl bg-sidebar/30">
+      <div className="flex flex-col gap-4 border border-secondary-header p-8 rounded-2xl bg-sidebar/50">
         <h2 className="z-2 text-xl font-semibold text-paragraph-text-dark">
           How Points Work
         </h2>
@@ -229,7 +229,7 @@ const Leaderboard = () => {
               member.rank > 3 && (
                 <div
                   key={index}
-                  className="w-full p-5 border border-sidebar flex justify-between items-center rounded-2xl bg-sidebar/30"
+                  className="w-full p-5 border border-sidebar flex justify-between items-center rounded-2xl bg-sidebar/50"
                 >
                   <div className="flex items-center gap-6">
                     <h2 className="text-2xl font-semibold text-paragraph-text-dark/80">

@@ -41,7 +41,7 @@ const RoadmapFilter = ({ selectedCategories, onToggleCategory }) => {
   };
 
   return (
-    <section className="bg-sidebar border border-sidebar rounded-xl p-5 shadow-sm sticky top-30 z-10 w-[30%] h-fit shrink-0 text-paragraph-text-dark">
+    <section className="bg-sidebar/50 border border-sidebar rounded-xl p-5 shadow-sm sticky top-30 mb-10 z-10 w-[30%] h-fit shrink-0 text-paragraph-text-dark">
       <div className="flex items-center justify-between mb-3">
         <svg
           className="h-6"
