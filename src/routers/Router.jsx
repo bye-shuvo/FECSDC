@@ -4,6 +4,8 @@ import EventPage from "../EventPage/EventPage";
 import LeaderboardPage from "../LeaderboardPage/LeaderboardPage";
 import AboutPage from "../AboutPage/AboutPage";
 import RoadmapPage from "../RoadmapPage/RoadmapPage";
+import Signup from "../AuthPage/Signup";
+import Login from "../AuthPage/Login";
 
 const router = createBrowserRouter([{
     path : "/" ,
@@ -24,6 +26,14 @@ const router = createBrowserRouter([{
 {
     path : "/roadmap" ,
     element : <RoadmapPage />
+},
+{
+    path : "/signup" ,
+    element : <Signup />
+},
+{
+    path : "/Login" , 
+    element : <Login />
 }
 ])
 

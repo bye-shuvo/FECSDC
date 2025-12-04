@@ -40,9 +40,9 @@ const Hero = () => {
         </h2>
       </header>
       <div id="buttons" className="flex gap-10 mt-8">
-        <button className="hover:cursor-pointer hover:shadow-[0_0_20px_0px] shadow-cta-btn py-3 px-15 rounded-full text-white bg-cta-btn hover:bg-btn-hover transition-colors ease-in-out text-xl">
+        <Link to={"/signup"} className="hover:cursor-pointer hover:shadow-[0_0_20px_0px] shadow-cta-btn py-3 px-15 rounded-full text-white bg-cta-btn hover:bg-btn-hover transition-colors ease-in-out text-xl">
           Join
-        </button>{" "}
+        </Link>{" "}
         <button className="hover:cursor-pointer hover:shadow-[0_0_20px_0px] shadow-cta-btn py-3 px-10 rounded-full text-white outline-cta-btn hover:bg-cta-btn/30 outline-1 text-xl flex items-center gap-3 transition-colors ease-in-out">
           Explore
           <svg
