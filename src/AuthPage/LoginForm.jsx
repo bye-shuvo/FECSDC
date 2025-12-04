@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const LoginForm = () => {
   const {
@@ -9,9 +10,15 @@ const LoginForm = () => {
   } = useForm();
   const [data, setdata] = useState(null);
 
+  const userLogin = async () =>{
+   const response = await axios.post("http://localhost:3000/v1/user/login" , JSON.stringify(data))
+    const message = response.data ;
+    console.log(message);
+  }
   useEffect(()=>{
-    
+   if(data) (async () => {await userLogin();})()
   },[data]);
+
   return (
     <form
       className="space-y-6"
