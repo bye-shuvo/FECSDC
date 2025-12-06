@@ -10,7 +10,7 @@ const Login = () => {
     <div className="w-full min-h-screen bg-body flex flex-col gap-10 text-white">
       <Navbar />
       <main className="px-[28%] min-h-screen">
-        <header className="h-[55vh] flex flex-col items-center justify-center ">
+        <header className="h-[35vh] flex flex-col items-center justify-end mb-15">
           <img
             className="z-10 absolute top-0 w-full object-center opacity-30 mask-b-from-30%"
             src="src/assets/signup-header-banner.jpg"
@@ -36,7 +36,7 @@ const Login = () => {
           <div className="text-center">
             <p className="text-md text-muted-foreground">
               Don't have an account?{" "}
-              <Link to={"/signup"} className="text-btn-hover">
+              <Link to={"/signup"} className="text-btn-hover underline">
                 Sign up
               </Link>
             </p>
