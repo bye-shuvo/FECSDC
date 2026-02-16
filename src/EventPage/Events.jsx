@@ -71,7 +71,7 @@ const Events = () => {
       location: "Lab Building, Room 301",
       attendees: 50,
       category: "Workshop",
-      image: "/src/assets/event.png",
+      image: "src/assets/fecsdc-logo.png",
     },
   ]);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -112,24 +112,24 @@ const Events = () => {
         ))}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="flex justify-around items-center flex-wrap gap-8">
         {filteredEvents.map((event) => (
           <div
             key={event.id}
-            className="bg-sidebar/30 rounded-[3rem] overflow-hidden hover:shadow-lg transition-shadow"
+            className="bg-sidebar/30 overflow-hidden hover:shadow-lg transition-shadow w-[42%] shrink-0 rounded-2xl"
           >
             <img
               src={event.image}
-              className="h-75 w-full aspect-square object-cover object-center rounded-b-[3rem] shadow-[0_0_20px_0px] shadow-secondary-header"
+              className="h-60 w-full aspect-square object-cover object-center rounded-2xl shadow-lg shadow-secondary-header/30"
               alt=""
             />
-            <div className="p-7 flex items-center gap-5">
-              <div className="w-1/3 pr-5 flex flex-col items-start gap-5 border-r-2 border-cta-btn">
+            <div className="p-[5%] flex items-center justify-around w-full">
+              <div className="flex flex-col items-start gap-5 border-r-2 border-cta-btn pr-2">
                 {" "}
                 <span className="text-xs rounded-full py-1 px-2 bg-cta-btn/30">
                   {event.category}
                 </span>
-                <p className="text-5xl font-semibold">{event.date}</p>
+                <p className="text-4xl font-semibold">{event.date}</p>
                 <p className="flex gap-2 text-center">
                   <svg
                     className="w-6"
@@ -144,7 +144,7 @@ const Events = () => {
                   {event.time}
                 </p>
               </div>
-              <div className="w-2/3">
+              <div className="pl-5">
                 <h3 className="text-2xl font-bold mb-4 mt-3">{event.title}</h3>
                 <p className="text-paragraph-text-dark mb-3">
                   {event.description}
