@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "../HomePage/Navbar";
-import Footer from "../HomePage/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import Events from "./Events";
 
 const EventPage = () => {
