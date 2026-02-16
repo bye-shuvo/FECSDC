@@ -32,9 +32,8 @@ const Features = () => {
     },
   ];
   return (
-    <section className="text-paragraph-text-dark px-[10%]">
-      <div className="z-0 absolute left-0 bg-linear-to-b from-0% from-cta-btn/65 to-90% to-body/50 h-25 w-full"></div>
-      <div className="container mx-auto mt-25">
+    <section className="text-paragraph-text-dark px-[10%] w-full bg-radial-[at_50%_0%]  from-0% from-cta-btn/30 to-50% to-body">
+      <div className="container mx-auto">
         <h2 className="text-[3rem] font-semibold text-white mb-5">
           What We Offer
         </h2>
