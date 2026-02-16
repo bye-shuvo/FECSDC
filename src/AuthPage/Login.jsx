@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../HomePage/Navbar";
-import Footer from "../HomePage/Footer";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 import { Link } from "react-router";
 import LoginForm from "./LoginForm";
