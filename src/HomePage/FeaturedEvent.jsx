@@ -76,7 +76,7 @@ const FeaturedEvents = () => {
   ]);
 
   return (
-    <section className="flex flex-col items-center gap-4 px-[10%] py-20">
+    <section className="flex flex-col items-center gap-4 py-20 px-[15%]">
       <header className="w-full mb-5">
         <h2 className="text-[3rem] font-semibold text-white">
           Upcoming Events

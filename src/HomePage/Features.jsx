@@ -32,16 +32,16 @@ const Features = () => {
     },
   ];
   return (
-    <section className="text-paragraph-text-dark px-[10%] w-full bg-radial-[at_50%_0%]  from-0% from-cta-btn/30 to-50% to-body">
+    <section className="text-paragraph-text-dark px-[15%]">
       <div className="container mx-auto">
-        <h2 className="text-[3rem] font-semibold text-white mb-5">
+        <h2 className="text-[3rem] font-semibold text-white mb-10">
           What We Offer
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="border-2 border-secondary-header hover:border-cta-btn hover:scale-101 transition-all rounded-2xl p-5 bg-sidebar/50"
+              className="border-3 border-secondary-header hover:border-cta-btn hover:scale-101 transition-all rounded-lg p-5 bg-sidebar/50"
             >
               <span className="flex h-15 first:in-first:fill-cta-btn mb-2">
                 {feature.icon}

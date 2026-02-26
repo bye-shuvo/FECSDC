@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router";
 
 const Hero = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center w-full overflow-hidden bg-radial-[at_50%_100%] origin-bottom from-0% from-cta-btn/30 to-50% to-body">
+    <div className="h-screen flex flex-col items-center justify-center">
       <Link to={"/events"} className="text-md py-2.5 px-3 outline-1 outline-secondary-header shadow-[0px_0px_10px_0px] hover:shadow-[0px_0px_25px_5px] shadow-secondary-header backdrop-blur-2xl transition-all ease-in-out rounded-full text-white flex items-center gap-4 hover:gap-5 mb-8">
         <span className="bg-cta-btn text-white rounded-full px-3 py-1 flex gap-2">
           New{" "}

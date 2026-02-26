@@ -1,8 +1,8 @@
 import Hero from "./HomePage/Hero";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import FeaturedEvents from "./HomePage/featured-events";
-import CommitteePreview from "./HomePage/committee-preview";
+import FeaturedEvents from "./HomePage/FeaturedEvent";
+import CommitteePreview from "./HomePage/Committee";
 import Features from "./HomePage/Features";
 import CTA from "./HomePage/CTA";
 import { useLocation } from "react-router";
@@ -11,7 +11,7 @@ const App = () => {
   const location = useLocation();
   console.log(location.state);
   return (
-    <div className="w-full min-h-screen bg-body flex flex-col">
+    <div className="bg-body flex flex-col box-border">
       <Navbar />
       <Hero />
       <Features />

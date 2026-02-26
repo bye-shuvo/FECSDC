@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className=" fixed w-full text-white flex items-center justify-evenly py-10 z-50">
+    <div className="sticky text-white flex items-center justify-evenly top-10 z-50">
       <div id="logo" className="flex items-center backdrop-blur-lg pr-3 rounded-full">
         <img
           className="h-12"

@@ -38,7 +38,7 @@ const committeePreview = () => {
   ];
 
   return (
-    <section className="pb-20 text-white px-[10%]">
+    <section className="text-white py-20 px-[10%]">
       <div className="mx-auto px-4">
         <div className="mb-12">
           <h2 className="text-3xl md:text-[3rem] font-bold text-foreground mb-4">
